@@ -3,31 +3,58 @@ void setup(){
   size(600, 400); 
   background(255,255,255);
 
+  drawName();
+  drawName();
+  drawName();
+  drawName();
+  drawName();
+
+
+  
+}
+
+var drawName = function(){
   var textX = random(50, 550);
   var textY = random(50, 350);
-  var yourName = "Your Name";
+  var yourName = "Jayla";
 
   fill(241,9,55);
   textSize(40);
   text("Hiiii, " + yourName, textX, textY);
 }
 
+
+
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
 
 };
+
+
+
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
 
 //🟡drawStar Function - custom function created by Ms. Hall
 var drawStar = function(){
-  var starSize = random(2,12);
+  var starSize = random(6,16);
   var starX = mouseX + random(-12,12);
   var starY = mouseY + random(-12,12);
   textSize(starSize);
   text("⭐",starX, starY);
 };
+
+var drawFace = function(){
+  var faceSize = random(6,16);
+  var faceX = mouseX + random(-12,12);
+  var faceY = mouseY + random(-12,12);
+  textSize(faceSize);
+  text("😍",faceX, faceY);
+};
+
+
 
 //🟡mouseClicked Function - will run when the mouse is clicked
 mouseClicked = function(){
@@ -37,4 +64,8 @@ mouseClicked = function(){
   drawStar();
   drawStar();
   drawStar();
+
+  drawFace();
+  drawFace();
+
 };
